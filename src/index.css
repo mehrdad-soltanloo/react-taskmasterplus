@@ -1,0 +1,179 @@
+/* General body styles */
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme (default) */
+body.light {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+/* Dark theme */
+body.dark {
+  background-color: #333;
+  color: white;
+}
+
+.toggle-btn {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 2rem;
+}
+
+/* Todo container styles */
+.todo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  gap: 1.8rem;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  text-align: center;
+  margin: 20px auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Light theme for todo-container */
+.todo-container.light {
+  background-color: white;
+  color: black;
+}
+
+/* Dark theme for todo-container */
+.todo-container.dark {
+  background-color: #444;
+  color: white;
+}
+h1 {
+  font-size: 2.6rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.task-form input {
+  width: 80%;
+}
+
+.filter-btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/* Task list styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease;
+}
+
+.checked-text {
+  display: flex;
+  gap: 1rem;
+}
+
+/* Dark theme styles for tasks */
+body.dark li {
+  background-color: #555;
+  border-color: #666;
+}
+
+/* Completed task styles */
+li.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+/* Input and button styles */
+input[type="text"] {
+  padding: 10px;
+  width: 70%;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  letter-spacing: 1px;
+
+  transition: all 0.5s;
+}
+
+/* Add task button */
+button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Remove task button */
+button.remove-btn {
+  background-color: #f9f9f9;
+  color: black;
+}
+
+button.remove-btn:hover {
+  background-color: #c82333;
+  color: white;
+}
+
+/* Filter buttons */
+button.filter-btn {
+  background-color: #f9f9f9;
+  color: black;
+  margin: 5px;
+}
+
+button.filter-btn:hover {
+  background-color: #007bff;
+  color: white;
+}
+
+/* Theme toggle button */
+button.theme-toggle-btn {
+  font-size: 2.6rem;
+  background-color: #f4f4f4;
+  color: black;
+}
+
+button.theme-toggle-btn:hover {
+  background-color: #f4f4f4;
+}
